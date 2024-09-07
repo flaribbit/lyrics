@@ -1,0 +1,5 @@
+{
+    "latex-workshop.latex.recipe.default": "latexmk (xelatex)",
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "latex-workshop.latex.outDir": "build"
+}
