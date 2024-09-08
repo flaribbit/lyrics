@@ -11,10 +11,19 @@ jobs:
       - name: Set up Git repository
         uses: actions/checkout@v4
       - name: Compile LaTeX document
+        run: |
+          curl -OL https://github.com/adobe-fonts/source-han-serif/releases/download/2.003R/07_SourceHanSerifJ.zip
+          curl -OL https://github.com/adobe-fonts/source-han-serif/releases/download/2.003R/09_SourceHanSerifSC.zip
+          7z x 07_SourceHanSerifJ.zip OTF/Japanese
+          7z x 09_SourceHanSerifSC.zip OTF/SimplifiedChinese
+      - name: Compile LaTeX document
         uses: xu-cheng/latex-action@v3
         with:
           root_file: lyrics.tex
           latexmk_use_xelatex: true
+          extra_fonts: |
+            ./OTF/SimplifiedChinese/*.otf
+            ./OTF/Japanese/*.otf
       - name: Upload PDF file
         uses: actions/upload-artifact@v4
         with:
