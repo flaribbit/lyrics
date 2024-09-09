@@ -24,10 +24,14 @@ jobs:
           extra_fonts: |
             ./OTF/SimplifiedChinese/*.otf
             ./OTF/Japanese/*.otf
+      - name: Prepare dir
+        run: |
+          mkdir www
+          mv lyrics.pdf www
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: lyrics.pdf
+          path: www
 
   # Deploy job
   deploy:
