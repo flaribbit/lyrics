@@ -3,36 +3,39 @@
 \usepackage{ctex}
 \usepackage{amsmath,amssymb}
 \usepackage{color}
+\usepackage{hyperref}
 \usepackage[a4paper]{geometry}
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
 
 \usepackage{ruby}
+\renewcommand{\rubysize}{0.5}
+\renewcommand{\rubysep}{-0.4em}
+
+\usepackage[titles]{tocloft}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}}
+\setlength{\cftbeforesecskip}{0.5em}
+
+\usepackage{titlesec}
+\titleformat{\section}{\fontsize{24pt}{24pt}\selectfont\bfseries\centering}{\thesection. }{0pt}{}
 
 \newCJKfontfamily\fontjp{Source Han Serif}
 \newCJKfontfamily\fontcn{Source Han Serif SC}
 \setCJKmainfont{Source Han Serif}
 
-\setlength{\parindent}{0pt}
-
-\renewcommand{\rubysize}{0.5}
-\renewcommand{\rubysep}{-0.4em}
-
-\usepackage{titlesec}
-\titleformat{\section}{\fontsize{24pt}{24pt}\selectfont\bfseries\centering}{\thesection. }{0pt}{}
-
 \begin{document}
-
 \fontsize{16pt}{20pt}\selectfont
+\setlength{\parindent}{0pt}
 \centering
 
-\input{parts/01_aliez}
-\input{parts/02_kazeninaru}
-\input{parts/03_yakimochi}
-\input{parts/04_badapple}
-\input{parts/05_seisyun_complex}
-\input{parts/06_shinkai_shoujo}
-\input{parts/07_wrong_world}
-\input{parts/08_sanyousei}
-\input{parts/09_guitar_loneliness_and_blue_planet}
+\tableofcontents
+\clearpage\input{parts/01_aliez}
+\clearpage\input{parts/02_kazeninaru}
+\clearpage\input{parts/03_yakimochi}
+\clearpage\input{parts/04_badapple}
+\clearpage\input{parts/05_seisyun_complex}
+\clearpage\input{parts/06_shinkai_shoujo}
+\clearpage\input{parts/07_wrong_world}
+\clearpage\input{parts/08_sanyousei}
+\clearpage\input{parts/09_guitar_loneliness_and_blue_planet}
 
 \end{document}
