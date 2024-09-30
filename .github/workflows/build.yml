@@ -26,8 +26,9 @@ jobs:
             ./OTF/Japanese/*.otf
       - name: Prepare dir
         run: |
-          mkdir www
-          mv lyrics.pdf www
+          curl -OL https://github.com/mozilla/pdf.js/releases/download/v4.6.82/pdfjs-4.6.82-dist.zip
+          7z x pdfjs-4.6.82-dist.zip -owww
+          mv lyrics.pdf www/web
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
