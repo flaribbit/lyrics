@@ -24,6 +24,14 @@
 \newCJKfontfamily\fontcn{Source Han Serif SC}
 \setCJKmainfont{Source Han Serif}
 
+% xeCJK 没有内置包含这些字符的专门类别，必须自定义。
+\xeCJKDeclareCharClass{CJK}{
+% "2605, % ★
+% "2606, % ☆
+% "266A, % ♪
+"2600->"26FF,
+}
+
 \begin{document}
 \fontsize{16pt}{20pt}\selectfont
 \setlength{\parindent}{0pt}
@@ -56,5 +64,6 @@
 \include{parts/24_1_2_fan_club}
 \include{parts/25_seiza_ninareta}
 \include{parts/26_tenshinifuretayo}
+\include{parts/27_fuwafuwa_jikan}
 
 \end{document}
