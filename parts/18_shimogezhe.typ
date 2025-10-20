@@ -1,5 +1,6 @@
-\section{\texorpdfstring{\fontcn}{}世末歌者}
-{\fontcn
+#import "../rubby.typ": bigskip, ruby, zhfont, zhtext
+#set text(font: zhfont)
+= #zhtext[世末歌者]
 
 蝉时雨　化成淡墨渲染暮色
 
@@ -9,7 +10,7 @@
 
 隔着窗　同城市一并模糊了
 
-\bigskip
+#bigskip()
 
 拨弄着　旧吉他　哼着四拍子的歌
 
@@ -19,7 +20,7 @@
 
 寻觅着　风的波折
 
-\bigskip
+#bigskip()
 
 我仍然在　无人问津的阴雨霉湿之地
 
@@ -29,7 +30,7 @@
 
 忙碌着　无为着　继续
 
-\bigskip
+#bigskip()
 
 等待着谁　能够将我的心房轻轻叩击
 
@@ -39,7 +40,7 @@
 
 哪怕只　一瞬的　奇迹
 
-\bigskip
+#bigskip()
 
 夏夜空　出现在遥远的记忆
 
@@ -49,7 +50,7 @@
 
 一如那些　模糊身影的别离
 
-\bigskip
+#bigskip()
 
 困惑地　拘束着　如城市池中之鱼
 
@@ -59,7 +60,7 @@
 
 注视着　色彩褪去
 
-\bigskip
+#bigskip()
 
 我仍然在　无人问津的阴雨霉湿之地
 
@@ -69,7 +70,7 @@
 
 忙碌着　无为着　继续
 
-\bigskip
+#bigskip()
 
 祈求着谁　能够将我的心房轻轻叩击
 
@@ -79,13 +80,13 @@
 
 不存在　刹那的　奇迹
 
-\bigskip
+#bigskip()
 
 极夜与永昼　别离与欢聚
 
 脉搏与呼吸　找寻着意义
 
-\bigskip
+#bigskip()
 
 我仍然在　无人问津的阴雨霉湿之地
 
@@ -95,7 +96,7 @@
 
 追逐着　梦想着　继续
 
-\bigskip
+#bigskip()
 
 请别让我　独自匍匐于滂沱世末之雨
 
@@ -105,7 +106,7 @@
 
 哭泣着　乞求着　奇迹
 
-\bigskip
+#bigskip()
 
 用这双手　拨出残缺染了锈迹的弦音
 
@@ -114,5 +115,3 @@
 曲终之时　你是否便会回应我的心音
 
 将颤抖的双手牵起　迎来每个人的结局
-
-}

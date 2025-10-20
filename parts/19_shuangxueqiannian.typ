@@ -1,5 +1,6 @@
-\section{\texorpdfstring{\fontcn}{}霜雪千年}
-{\fontcn
+#import "../rubby.typ": bigskip, ruby, zhfont, zhtext
+#set text(font: zhfont)
+= #zhtext[霜雪千年]
 
 梨花香　缠着衣角掠过熙攘　复悄入红帘深帐
 
@@ -9,13 +10,13 @@
 
 过眼的葱郁风光　悉数泛了黄
 
-\bigskip
+#bigskip()
 
 褪尽温度的风　无言牵引中　便清晰了在此的眉目
 
 暮色的消融　隐约了晦朔葱茏
 
-\bigskip
+#bigskip()
 
 在这老街回眸　烟云中追溯我是谁
 
@@ -29,7 +30,7 @@
 
 在你淡漠眉间　瞥见离人的喜悲霜雪
 
-\bigskip
+#bigskip()
 
 楼阁现　尘飞雾散荧光蹁跹　显露出斑驳石阶
 
@@ -39,13 +40,13 @@
 
 似曾有欢声笑言　萦绕这高轩
 
-\bigskip
+#bigskip()
 
 云动寂静鸣蝉　雨坠激漪涟　皴擦点染勾勒这世间
 
 缘起的一眼　定格了三生千年
 
-\bigskip
+#bigskip()
 
 在这老街回眸　烟云中追溯我是谁
 
@@ -59,7 +60,7 @@
 
 在你淡漠眉间　瞥见离人的喜悲霜雪
 
-\bigskip
+#bigskip()
 
 三月梨花雪　几载开了又败
 
@@ -69,7 +70,7 @@
 
 而我又在待何人
 
-\bigskip
+#bigskip()
 
 在这亭台回眸　千年后忆起你是谁
 
@@ -82,5 +83,3 @@
 遥梦桑竹桃源　轮回中曾道别的地点
 
 愿今生再相见　消融你眉间悲戚霜雪
-
-}

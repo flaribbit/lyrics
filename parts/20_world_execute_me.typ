@@ -1,4 +1,5 @@
-\section{world.execute(me);}
+#import "../rubby.typ": bigskip, ruby, zhtext
+= world.execute(me);
 
 Switch on the power line, remember to put on protection
 
@@ -8,7 +9,7 @@ Fill in my data, parameters, initialization
 
 Setup our new world and let's begin the simulation
 
-\bigskip
+#bigskip()
 
 If I'm a set of points, then I will give you my dimension
 
@@ -18,7 +19,7 @@ If I'm a sine wave, then you can sit on all my tangents
 
 If I approach infinity, then you can be my limitations
 
-\bigskip
+#bigskip()
 
 Switch my current to AC to DC
 
@@ -28,7 +29,7 @@ Oh, we can travel to A.D to B.C
 
 And we can unite, so deeply, so deeply
 
-\bigskip
+#bigskip()
 
 If I can, if I can, give you all the stimulations
 
@@ -38,7 +39,7 @@ If I can make you happy, I will run the execution
 
 Though we are trapped in this strange, strange simulation
 
-\bigskip
+#bigskip()
 
 If I'm an eggplant, then I will give you my nutrients
 
@@ -48,7 +49,7 @@ If I'm a tabby cat, then I will purr for your enjoyment
 
 If I'm the only god, then you're the proof of my existence
 
-\bigskip
+#bigskip()
 
 Switch my gender to F to M
 
@@ -58,7 +59,7 @@ Oh, switch my role to S to M
 
 So we can enter the trance, the trance
 
-\bigskip
+#bigskip()
 
 If I can, if I can, feel your vibrations
 
@@ -70,7 +71,7 @@ You have left, you have left, you have left
 
 You have left me in isolation
 
-\bigskip
+#bigskip()
 
 If I can, if I can, erase all the pointless fragments
 
@@ -78,7 +79,7 @@ Then maybe, then maybe, you won't leave me so disheartened
 
 Challenging your God, you have made some illegal arguments
 
-\bigskip
+#bigskip()
 
 Execution, execution, execution, execution
 
@@ -86,9 +87,9 @@ Execution, execution, execution, execution
 
 Execution, execution, execution, execution
 
-{\fontcn Ein, dos, trois, \ruby{네}{ne}, fem, 六, execution}
+#zhtext[Ein, dos, trois, #ruby[네][ne], fem, 六, execution]
 
-\bigskip
+#bigskip()
 
 If I can, if I can give them all the execution
 
@@ -98,7 +99,7 @@ If I can have you back, I will run the execution
 
 Though we are trapped, we are trapped, ah
 
-\bigskip
+#bigskip()
 
 I've studied, I've studied how to properly love
 
@@ -108,6 +109,6 @@ I know the algebraic expression of love
 
 Though you are free, I am trapped, trapped in love
 
-\bigskip
+#bigskip()
 
 Execution
