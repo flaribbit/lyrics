@@ -21,8 +21,8 @@ jobs:
           mkdir -p fonts
           curl -OL https://github.com/adobe-fonts/source-han-serif/releases/download/2.003R/07_SourceHanSerifJ.zip
           curl -OL https://github.com/adobe-fonts/source-han-serif/releases/download/2.003R/09_SourceHanSerifSC.zip
-          7z x 07_SourceHanSerifJ.zip -ofonts
-          7z x 09_SourceHanSerifSC.zip -ofonts
+          7z x 07_SourceHanSerifJ.zip -ofonts OTF
+          7z x 09_SourceHanSerifSC.zip -ofonts OTF
 
       - name: Compile Typst document
         run: |
