@@ -1,34 +1,39 @@
-name: Build LaTeX document
+name: Build Typst document
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
 jobs:
-  build_latex:
+  build_typst:
     runs-on: ubuntu-latest
     steps:
       - name: Set up Git repository
         uses: actions/checkout@v4
-      - name: Download fonts
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v4
+        with:
+          typst-version: v0.14.0
+
+      - name: Prepare fonts directory
         run: |
+          mkdir -p fonts
           curl -OL https://github.com/adobe-fonts/source-han-serif/releases/download/2.003R/07_SourceHanSerifJ.zip
           curl -OL https://github.com/adobe-fonts/source-han-serif/releases/download/2.003R/09_SourceHanSerifSC.zip
-          7z x 07_SourceHanSerifJ.zip OTF/Japanese
-          7z x 09_SourceHanSerifSC.zip OTF/SimplifiedChinese
-      - name: Compile LaTeX document
-        uses: xu-cheng/latex-action@v3
-        with:
-          root_file: lyrics.tex
-          latexmk_use_xelatex: true
-          extra_fonts: |
-            ./OTF/SimplifiedChinese/*.otf
-            ./OTF/Japanese/*.otf
+          7z x 07_SourceHanSerifJ.zip -ofonts
+          7z x 09_SourceHanSerifSC.zip -ofonts
+
+      - name: Compile Typst document
+        run: |
+          typst c lyrics.typ --font-path fonts
+
       - name: Prepare dir
         run: |
           curl -OL https://github.com/mozilla/pdf.js/releases/download/v4.6.82/pdfjs-4.6.82-dist.zip
           7z x pdfjs-4.6.82-dist.zip -owww
           mv lyrics.pdf www/web
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -37,7 +42,7 @@ jobs:
   # Deploy job
   deploy:
     # Add a dependency to the build job
-    needs: build_latex
+    needs: build_typst
 
     # Grant GITHUB_TOKEN the permissions required to make a Pages deployment
     permissions:
