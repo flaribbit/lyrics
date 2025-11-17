@@ -19,10 +19,10 @@ jobs:
       - name: Prepare fonts directory
         run: |
           mkdir -p fonts
-          curl -OL https://github.com/adobe-fonts/source-han-serif/releases/download/2.003R/07_SourceHanSerifJ.zip
-          curl -OL https://github.com/adobe-fonts/source-han-serif/releases/download/2.003R/09_SourceHanSerifSC.zip
-          7z x 07_SourceHanSerifJ.zip -ofonts OTF
-          7z x 09_SourceHanSerifSC.zip -ofonts OTF
+          curl -OL https://github.com/adobe-fonts/source-han-sans/releases/download/2.005R/07_SourceHanSansJ.zip
+          curl -OL https://github.com/adobe-fonts/source-han-sans/releases/download/2.005R/09_SourceHanSansSC.zip
+          7z x 07_SourceHanSansJ.zip -ofonts OTF
+          7z x 09_SourceHanSansSC.zip -ofonts OTF
 
       - name: Compile Typst document
         run: |
