@@ -1,6 +1,7 @@
-#set text(font: "Source Han Sans", size: 12pt)
+#set text(font: "Source Han Sans", size: 14pt)
 #set align(center)
 #set heading(numbering: "1.")
+#set par(spacing: 1em)
 #show heading: set block(spacing: 1.2em)
 
 #let names = (
@@ -33,6 +34,7 @@
   "27_fuwafuwa_jikan",
   "28_void",
   "29_tententengokujigokugoku",
+  "30_tetoris",
 )
 #outline(title: [目录])
 #for name in names {
