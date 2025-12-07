@@ -26,7 +26,7 @@ jobs:
 
       - name: Compile Typst document
         run: |
-          typst c lyrics.typ --font-path fonts
+          typst c lyrics.typ --font-path fonts --no-pdf-tags
 
       - name: Prepare dir
         run: |
