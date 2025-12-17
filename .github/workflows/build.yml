@@ -30,8 +30,8 @@ jobs:
 
       - name: Prepare dir
         run: |
-          curl -OL https://github.com/mozilla/pdf.js/releases/download/v4.6.82/pdfjs-4.6.82-dist.zip
-          7z x pdfjs-4.6.82-dist.zip -owww
+          curl -OL https://github.com/mozilla/pdf.js/releases/download/v5.4.449/pdfjs-5.4.449-dist.zip
+          7z x pdfjs-5.4.449-dist.zip -owww
           mv lyrics.pdf www/web
 
       - name: Upload artifact
