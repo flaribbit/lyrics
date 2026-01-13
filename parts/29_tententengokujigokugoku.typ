@@ -74,11 +74,11 @@ DEATH BIRTH DEATH
 
 #ruby[生][い]きた#ruby[魂][たましい]を TRAYに#ruby[置][お]いて
 
-#ruby[めく][めく]る5#ruby[枚][まい]のCARD #ruby[揺][ゆ]れる#ruby[炎][ほのお]
+めくる5#ruby[枚][まい]のCARD #ruby[揺][ゆ]れる#ruby[炎][ほのお]
 
 #ruby[先][さき]にあなたが RAISEしたなら
 
-#ruby[もう][もう]#ruby[迷][まよ]わない GLASS#ruby[飲][の]み#ruby[干][ほ]して
+もう#ruby[迷][まよ]わない GLASS #ruby[飲][の]み#ruby[干][ほ]して
 
 #ruby[今][こん]#ruby[夜][や] ALL-IN #ruby[降][お]りない この#ruby[勝][しょう]#ruby[負][ぶ]
 
