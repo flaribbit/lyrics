@@ -40,6 +40,7 @@
   "33_mayohiganomori",
   "34_butterfly",
   "35_wasureteyaranai",
+  "36_fuyunohana",
 )
 #outline(title: [目录])
 #for name in names {
