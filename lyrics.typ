@@ -43,6 +43,7 @@
   "36_fuyunohana",
   "37_telepathy",
   "38_secret_base",
+  "39_hoshifuruumi",
 )
 #outline(title: [目录])
 #for name in names {
